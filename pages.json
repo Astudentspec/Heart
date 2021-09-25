@@ -1,0 +1,182 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"backgroundTextStyle": "dark", //下拉 loading 的样式，仅支持 dark/light
+				"onReachBottomDistance": 50,
+				"app-plus": {
+
+				}
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"enablePullDownRefresh": false, //设置为true表示当前页面开启下拉刷新
+				"backgroundTextStyle": "dark", //下拉 loading 的样式，仅支持 dark/light
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+
+				"backgroundTextStyle": "dark", //下拉 loading 的样式，仅支持 dark/light
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/indexsearch/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/write/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/showArticle/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			},
+			"app-plus": {
+				"softinputMode": "adjustPan"
+			}
+
+		}
+
+		, {
+			"path": "pages/reply/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/email/emailRegister",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/login/email/emailLogin",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/treeHole/treeHole",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/treeHole/show",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/my/editor/editor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/letter/letter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/letter/show/show",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyl.e": "black",
+		"navigationBarTitleText": "??",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"softinputMode":"adjustResize",
+			"titleNView": false,
+			"statusbar": {
+				"immersed": true
+			}
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"iconWidth": "30px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "./static/img/home-not-active.png",
+				"selectedIconPath": "static/img/home-active.png"
+			},
+			{
+				"pagePath": "pages/treeHole/treeHole",
+				"iconPath": "static/img/treeHole.png",
+				"selectedIconPath": "static/img/treeHole-active.png"
+			},
+			{
+				"pagePath": "pages/letter/letter",
+				"iconPath": "static/img/letter-icon.png",
+				"selectedIconPath": "static/img/letter-icon-active.png"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/img/my-not-active.png",
+				"selectedIconPath": "static/img/my-active.png"
+			}
+		]
+	}
+}
